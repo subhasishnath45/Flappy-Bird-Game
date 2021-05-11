@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    overflow-y: hidden;
 }
 .mobile-bg{
     width: 500px;
@@ -9,7 +10,7 @@
     position:absolute;
     background-image: url('./images/mobile-bg-png.png');
     background-repeat: no-repeat;
-    transform: scaleY(1.05);
+    /* transform: scale(0.9); */
     content: '';
     overflow: hidden;
     margin: auto;
@@ -34,6 +35,7 @@
     /* transform: scaleX(0.95); */
     border-radius: 49px;
     /* transform: scaleY(1.1); */
+    /* transform: scale(0.9); */
 }
 @keyframes animatedBackground {
         0% { background-position: 0 0; }
