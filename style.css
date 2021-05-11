@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.mobile-bg{
+    width: 500px;
+    height:730px;
+    position:absolute;
+    background-image: url('./images/mobile-bg-png.png');
+    background-repeat: no-repeat;
+    transform: scaleY(1.05);
+    content: '';
+    overflow: hidden;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    user-select: none;
+    
+}
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* transform: scaleX(0.95); */
+    border-radius: 49px;
+    /* transform: scaleY(1.1); */
+}
+@keyframes animatedBackground {
+        0% { background-position: 0 0; }
+        100% { background-position: -300px 0; }
+    }
+    @-moz-keyframes animatedBackground {
+        0% { background-position: 0 0; }
+        100% { background-position: -300px 0; }
+    }
+    @-webkit-keyframes animatedBackground {
+        0% { background-position: 0 0; }
+        100% { background-position: -300px 0; }
+    }
+    @-ms-keyframes animatedBackground {
+        0% { background-position: 0 0; }
+        100% { background-position: -300px 0; }
+    }
+    @-o-keyframes animatedBackground {
+        0% { background-position: 0 0; }
+        100% { background-position: -300px 0; }
+}
+.sky{
+    /* background-color: lightblue; */
+    background-image: url('./images/fb-game-background.png');
+    width:500px;
+    height:580px;
+    position:absolute;
+    background-position:0px 0px;
+    animation: animatedBackground 10s linear infinite;
+    -moz-animation: animatedBackground 10s linear infinite;
+    -webkit-animation: animatedBackground 10s linear infinite;
+    -ms-animation: animatedBackground 10s linear infinite;
+    -o-animation: animatedBackground 10s linear infinite;
+}
+.ground{
+    /* background-color: brown; */
+    background-image: url('./images/bottom-background.png');
+    background-position: center;
+    width:500px;
+    height:150px;
+    position:absolute;
+    top:580px;
+    z-index: 999;
+}
+.bird{
+    /* background-color:yellow; */
+    background-image: url('./images/flappy-bird.png');
+    position:absolute;
+    width:60px;
+    height:45px;
+    z-index: 999;
+}
+
+.obstacle{
+    /* background-color: green; */
+    background-image: url('./images/flappybird-pipe.png');
+    width:60px;
+    height:300px;
+    position:absolute;
+}
+
+.topObstacle{
+    /* background-color: green; */
+    background-image: url('./images/flappybird-pipe.png');
+    transform:rotate(180deg);
+    width:60px;
+    height:300px;
+    position:absolute;
+}
+
